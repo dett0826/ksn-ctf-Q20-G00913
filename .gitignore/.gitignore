@@ -1,0 +1,32 @@
+function findprime(){
+  
+var pie = "31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
+  var prime = 0;
+  for (i=0; i<91; i++){  
+  var checkDigit = pie.substr(i,10);
+  //Logger.log(checkDigit);
+   Logger.log(prime);
+    if(prime > 0){
+    
+   Logger.log(prime);
+   break;   
+    }
+    j=1;
+    while(j<100000){
+    j++;  
+    if(checkDigit % j == 0){
+      var prime = 0;
+      Logger.log(j);
+      break;
+    
+    }else{
+    var prime = checkDigit;
+    
+    }
+    
+    
+    }
+      
+    }
+  
+}
